@@ -2,7 +2,7 @@
 
 A maintained fork of [KevinVandy/material-react-table](https://github.com/KevinVandy/material-react-table), published as `@lminii/material-react-table`, that tracks the latest Material UI and TanStack Table releases.
 
-View [Documentation](https://www.material-react-table.com/)
+View [Documentation](https://material-react-table.minii.dev/)
 
 <a href="https://npmjs.com/package/@lminii/material-react-table" target="_blank">
   <img alt="" src="https://badgen.net/npm/v/@lminii/material-react-table?color=blue" />
@@ -33,31 +33,31 @@ View [Documentation](https://www.material-react-table.com/)
 
 ### **Built with [Material UI <sup>V9</sup>](https://mui.com) and [TanStack Table <sup>V9</sup>](https://tanstack.com/table/v9)**
 
-<img src="https://material-react-table.com/banner.png" alt="MRT" height="50" />
+<img src="https://material-react-table.minii.dev/banner.png" alt="MRT" height="50" />
 
 > Want to use Mantine instead of Material UI? Check out [Mantine React Table](https://www.mantine-react-table.com)
 
 ## Learn More
 
 - Join the [Discord](https://discord.gg/5wqyRx6fnm) server to join in on the development discussion or ask questions
-- View the [Docs Website](https://www.material-react-table.com/)
-- See all [Props, Options, APIs, Components, and Hooks](https://www.material-react-table.com/docs/api)
+- View the [Docs Website](https://material-react-table.minii.dev/)
+- See all [Props, Options, APIs, Components, and Hooks](https://material-react-table.minii.dev/docs/api)
 
 ### Quick Examples
 
-- [Basic Table](https://www.material-react-table.com/docs/examples/basic/) (See Default Features)
-- [Minimal Table](https://www.material-react-table.com/docs/examples/minimal/) (Turn off Features like Pagination, Sorting, Filtering, and Toolbars)
-- [Advanced Table](https://www.material-react-table.com/docs/examples/advanced/) (See some of the Advanced Features)
-- [Custom Headless Table](https://www.material-react-table.com/docs/examples/custom-headless/) (Build your own table markup)
-- [Dragging / Ordering Examples](https://www.material-react-table.com/docs/examples/column-ordering/) (Drag and Drop)
-- [Editing (CRUD) Examples](https://www.material-react-table.com/docs/examples/editing-crud/) (Create, Edit, and Delete Rows)
-- [Expanding / Grouping Examples](https://www.material-react-table.com/docs/examples/aggregation-and-grouping/) (Sum, Average, Count, etc.)
-- [Filtering Examples](https://www.material-react-table.com/docs/examples/filter-variants/) (Faceted Values, Switching Filters, etc.)
-- [Sticky Pinning Examples](https://www.material-react-table.com/docs/examples/sticky-header/) (Sticky Headers, Sticky Columns, Sticky Rows, etc.)
-- [Remote Data Fetching Examples](https://www.material-react-table.com/docs/examples/react-query/) (Server-side Pagination, Sorting, and Filtering)
-- [Virtualized Examples](https://www.material-react-table.com/docs/examples/virtualized/) (10,000 rows at once!)
-- [Infinite Scrolling](https://www.material-react-table.com/docs/examples/infinite-scrolling/) (Fetch data as you scroll)
-- [Localization (i18n)](https://www.material-react-table.com/docs/guides/localization#built-in-locale-examples) (Over a dozen languages built-in)
+- [Basic Table](https://material-react-table.minii.dev/docs/examples/basic/) (See Default Features)
+- [Minimal Table](https://material-react-table.minii.dev/docs/examples/minimal/) (Turn off Features like Pagination, Sorting, Filtering, and Toolbars)
+- [Advanced Table](https://material-react-table.minii.dev/docs/examples/advanced/) (See some of the Advanced Features)
+- [Custom Headless Table](https://material-react-table.minii.dev/docs/examples/custom-headless/) (Build your own table markup)
+- [Dragging / Ordering Examples](https://material-react-table.minii.dev/docs/examples/column-ordering/) (Drag and Drop)
+- [Editing (CRUD) Examples](https://material-react-table.minii.dev/docs/examples/editing-crud/) (Create, Edit, and Delete Rows)
+- [Expanding / Grouping Examples](https://material-react-table.minii.dev/docs/examples/aggregation-and-grouping/) (Sum, Average, Count, etc.)
+- [Filtering Examples](https://material-react-table.minii.dev/docs/examples/filter-variants/) (Faceted Values, Switching Filters, etc.)
+- [Sticky Pinning Examples](https://material-react-table.minii.dev/docs/examples/sticky-header/) (Sticky Headers, Sticky Columns, Sticky Rows, etc.)
+- [Remote Data Fetching Examples](https://material-react-table.minii.dev/docs/examples/react-query/) (Server-side Pagination, Sorting, and Filtering)
+- [Virtualized Examples](https://material-react-table.minii.dev/docs/examples/virtualized/) (10,000 rows at once!)
+- [Infinite Scrolling](https://material-react-table.minii.dev/docs/examples/infinite-scrolling/) (Fetch data as you scroll)
+- [Localization (i18n)](https://material-react-table.minii.dev/docs/guides/localization#built-in-locale-examples) (Over a dozen languages built-in)
 
 View additional [storybook examples](https://www.material-react-table.dev/)
 
@@ -65,7 +65,7 @@ View additional [storybook examples](https://www.material-react-table.dev/)
 
 _All features can easily be enabled/disabled_
 
-_**Fully Fleshed out [Docs](https://www.material-react-table.com/docs/guides#guides) are available for all features**_
+_**Fully Fleshed out [Docs](https://material-react-table.minii.dev/docs/guides#guides) are available for all features**_
 
 - [x] 30-56kb gzipped - [Bundlephobia](https://bundlephobia.com/package/@lminii/material-react-table)
 - [x] Advanced TypeScript Generics Support (TypeScript Optional)
@@ -107,7 +107,7 @@ _**Fully Fleshed out [Docs](https://www.material-react-table.com/docs/guides#gui
 
 ### Installation
 
-View the full [Installation Docs](https://www.material-react-table.com/docs/getting-started/install)
+View the full [Installation Docs](https://material-react-table.minii.dev/docs/getting-started/install)
 
 1. Ensure that you have React 18 or later installed
 
@@ -127,7 +127,7 @@ npm install @lminii/material-react-table
 
 ### Usage
 
-> Read the full usage docs [here](https://www.material-react-table.com/docs/getting-started/usage/)
+> Read the full usage docs [here](https://material-react-table.minii.dev/docs/getting-started/usage/)
 
 ```jsx
 import { useMemo, useState, useEffect } from 'react';
