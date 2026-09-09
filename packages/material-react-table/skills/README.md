@@ -2,7 +2,7 @@
 
 These folders are [Agent Skills](https://agentskills.io) for AI coding assistants such as Claude Code, Cursor, Codex, and Copilot.
 Each folder holds one `SKILL.md` that teaches an agent a slice of the Material React Table V4 API and the patterns the documentation recommends.
-The skills ship inside the `@mini_7/material-react-table` npm package, so every install of the library carries them.
+The skills ship inside the `@lminii/material-react-table` npm package, so every install of the library carries them.
 
 Full documentation for AI agents, including the MCP server, lives on the [AI Agents](https://material-react-table.minii.dev/docs/getting-started/ai-agents) docs page.
 
@@ -19,7 +19,7 @@ Full documentation for AI agents, including the MCP server, lives on the [AI Age
 | `virtualization` | Row and column virtualization, virtualizer options, and scroll-to-index. |
 | `localization` | The bundled locales and custom localization strings. |
 | `drag-and-drop-ordering` | Column and row drag and drop ordering. |
-| `migrate-v3-to-v4` | Moving an app from `material-react-table` V3 to `@mini_7/material-react-table` V4. |
+| `migrate-v3-to-v4` | Moving an app from `material-react-table` V3 to `@lminii/material-react-table` V4. |
 
 ## How Agents Use Them
 
@@ -28,11 +28,11 @@ There are three ways to get a skill in front of an agent.
 ### TanStack Intent
 
 [TanStack Intent](https://www.npmjs.com/package/@tanstack/intent) discovers skills from the packages installed in a project.
-In a project with `@mini_7/material-react-table` installed, an agent (or you) can list and load them:
+In a project with `@lminii/material-react-table` installed, an agent (or you) can list and load them:
 
 ```bash
 npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @mini_7/material-react-table#getting-started
+npx @tanstack/intent@latest load @lminii/material-react-table#getting-started
 ```
 
 Run `npx @tanstack/intent@latest install` once to add the discovery instructions to your `AGENTS.md` or `CLAUDE.md`.
@@ -62,11 +62,11 @@ The full list of `-a` values is in the [Supported Agents](https://github.com/ver
 
 ### MCP Server
 
-The [`@mini_7/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp) server bundles a copy of these skills.
+The [`@lminii/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp) server bundles a copy of these skills.
 Its `get_mrt_skill` tool lists them or returns one by name, and `search_mrt_docs` searches them alongside the guides and examples.
 
 ```bash
-claude mcp add material-react-table -- npx -y @mini_7/material-react-table-mcp
+claude mcp add material-react-table -- npx -y @lminii/material-react-table-mcp
 ```
 
 ## File Format

@@ -4,7 +4,7 @@ description: >
   Reorder columns and rows by drag and drop in Material React Table V4: enableColumnOrdering with the columnOrder state and mrt-row-* display column ids, enableRowOrdering with muiRowDragHandleProps onDragEnd reading draggingRow and hoveredRow, enableRowDragging for dropping rows onto other tables or UI, enableColumnDragging for column drags without reordering, and the draggingColumn, hoveredColumn, draggingRow, hoveredRow state. Load for user-arranged columns, sortable lists, moving rows between tables, or a drop that never fires.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -224,4 +224,4 @@ Source: `docs/guides/column-ordering-dnd.mdx`
 
 ## API Discovery
 
-Search `node_modules/@mini_7/material-react-table/dist/index.d.ts` for `enableRowOrdering`, `enableRowDragging`, `muiRowDragHandleProps`, `muiColumnDragHandleProps`, `draggingRow`, and `hoveredColumn`. The Column Ordering and Row Ordering guides at `/docs/guides/column-ordering-dnd` and `/docs/guides/row-ordering-dnd` list the related options, and `/docs/examples/enable-column-ordering`, `enable-row-ordering`, and `enable-row-dragging` are runnable examples.
+Search `node_modules/@lminii/material-react-table/dist/index.d.ts` for `enableRowOrdering`, `enableRowDragging`, `muiRowDragHandleProps`, `muiColumnDragHandleProps`, `draggingRow`, and `hoveredColumn`. The Column Ordering and Row Ordering guides at `/docs/guides/column-ordering-dnd` and `/docs/guides/row-ordering-dnd` list the related options, and `/docs/examples/enable-column-ordering`, `enable-row-ordering`, and `enable-row-dragging` are runnable examples.

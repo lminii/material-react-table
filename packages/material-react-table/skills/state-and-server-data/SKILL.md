@@ -4,7 +4,7 @@ description: >
   Control Material React Table V4 state with initialState, the state option plus on*Change callbacks, MRT_Updater handlers, table.getState and table.state, and move filtering, sorting, pagination, grouping, or expanding to the server with manual* options and rowCount. Load for controlled tables, persisted state, side effects on state change, TanStack Query integration, or infinite scrolling.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -43,7 +43,7 @@ const table = useMaterialReactTable({
 ### Handle updaters like React setState
 
 ```tsx
-import { type MRT_Updater, type MRT_RowSelectionState } from '@mini_7/material-react-table'
+import { type MRT_Updater, type MRT_RowSelectionState } from '@lminii/material-react-table'
 
 const handleRowSelectionChange = (updater: MRT_Updater<MRT_RowSelectionState>) => {
   setRowSelection((previous) => {
@@ -197,4 +197,4 @@ Source: `docs/guides/pagination.mdx`
 
 ## API Discovery
 
-`MRT_TableState` in `node_modules/@mini_7/material-react-table/dist/index.d.ts` lists every slice; each has an `on<Slice>Change` option and `table.set<Slice>` method. The State Options table at `/docs/api/state-options` shows defaults, and the `manual*` and `rowCount` options are in `/docs/api/table-options`.
+`MRT_TableState` in `node_modules/@lminii/material-react-table/dist/index.d.ts` lists every slice; each has an `on<Slice>Change` option and `table.set<Slice>` method. The State Options table at `/docs/api/state-options` shows defaults, and the `manual*` and `rowCount` options are in `/docs/api/table-options`.

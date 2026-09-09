@@ -4,7 +4,7 @@ description: >
   Render thousands of rows or hundreds of columns in Material React Table V4 with enableRowVirtualization and enableColumnVirtualization, tune rowVirtualizerOptions and columnVirtualizerOptions (overscan, estimateSize), reach the TanStack Virtual instance through rowVirtualizerInstanceRef for scrollToIndex, and understand the automatic layoutMode grid and sticky header. Load for large unpaginated tables, infinite scroll, scroll-to-row, jumpy scrolling, or headless virtualization with useMRT_RowVirtualizer.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -103,7 +103,7 @@ Virtualization keeps the DOM small while the fetched array grows. Server-side so
 ### Headless virtualization
 
 ```tsx
-import { useMRT_Rows, useMRT_RowVirtualizer, useMRT_ColumnVirtualizer } from '@mini_7/material-react-table'
+import { useMRT_Rows, useMRT_RowVirtualizer, useMRT_ColumnVirtualizer } from '@lminii/material-react-table'
 
 const rows = useMRT_Rows(table)
 const rowVirtualizer = useMRT_RowVirtualizer(table)
@@ -200,4 +200,4 @@ Source: `packages/material-react-table/src/hooks/useMRT_RowVirtualizer.ts`
 
 ## API Discovery
 
-Search `node_modules/@mini_7/material-react-table/dist/index.d.ts` for `Virtualizer` to find `MRT_RowVirtualizer`, `MRT_ColumnVirtualizer`, `MRT_VirtualizerOptions`, and `MRT_VirtualItem`. The TanStack Virtual docs at `https://tanstack.com/virtual/v3/docs/api/virtualizer` list every option and instance method. The Virtualization guide at `/docs/guides/virtualization` and the examples `/docs/examples/virtualized`, `enable-row-virtualization`, `enable-column-virtualization`, `enable-detail-panel-virtualized`, and `infinite-scrolling` show the patterns above.
+Search `node_modules/@lminii/material-react-table/dist/index.d.ts` for `Virtualizer` to find `MRT_RowVirtualizer`, `MRT_ColumnVirtualizer`, `MRT_VirtualizerOptions`, and `MRT_VirtualItem`. The TanStack Virtual docs at `https://tanstack.com/virtual/v3/docs/api/virtualizer` list every option and instance method. The Virtualization guide at `/docs/guides/virtualization` and the examples `/docs/examples/virtualized`, `enable-row-virtualization`, `enable-column-virtualization`, `enable-detail-panel-virtualized`, and `infinite-scrolling` show the patterns above.

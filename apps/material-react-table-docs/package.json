@@ -40,7 +40,7 @@
     "jspdf": "^2.5.2",
     "jspdf-autotable": "^3.8.4",
     "match-sorter": "^8.0.0",
-    "material-react-table": "workspace:@mini_7/material-react-table@*",
+    "material-react-table": "workspace:@lminii/material-react-table@*",
     "next": "14.2.35",
     "next-sitemap": "^4.2.3",
     "prism-react-renderer": "^2.4.1",

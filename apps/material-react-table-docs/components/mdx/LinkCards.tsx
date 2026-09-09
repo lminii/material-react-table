@@ -5,7 +5,7 @@ const cardData = [
   {
     text: 'NPM',
     image: '/npm.svg',
-    href: 'https://www.npmjs.com/package/@mini_7/material-react-table',
+    href: 'https://www.npmjs.com/package/@lminii/material-react-table',
   },
   {
     text: 'Source Code',

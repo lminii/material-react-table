@@ -11,13 +11,13 @@ import {
   </title>
   <meta
     name="description"
-    content="Migrating to Material React Table V4 from V3: Material UI V9, TanStack Table V9, and the @mini_7/material-react-table package"
+    content="Migrating to Material React Table V4 from V3: Material UI V9, TanStack Table V9, and the @lminii/material-react-table package"
   />
 </Head>
 
 ## Migrating to Material React Table V4 from V3
 
-Material React Table V4 is the first release published as `@mini_7/material-react-table`, a community fork of [KevinVandy/material-react-table](https://github.com/KevinVandy/material-react-table).
+Material React Table V4 is the first release published as `@lminii/material-react-table`, a community fork of [KevinVandy/material-react-table](https://github.com/KevinVandy/material-react-table).
 It targets Material UI V9 and Material UI X Date Pickers V9, and it moves from TanStack Table V8 to TanStack Table V9.
 
 Sections 1 to 7 cover the Material UI upgrade and the package switch. Section 8 covers TanStack Table V9.
@@ -48,18 +48,18 @@ npm uninstall material-react-table
 
 Then install the fork along with the Material UI V9 peer dependencies:
 
-<InstallCommand packagesString="@mini_7/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9" />
+<InstallCommand packagesString="@lminii/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9" />
 
 Update every import:
 
 ```diff
 -import { MaterialReactTable } from 'material-react-table';
 -import { MRT_Localization_DE } from 'material-react-table/locales/de';
-+import { MaterialReactTable } from '@mini_7/material-react-table';
-+import { MRT_Localization_DE } from '@mini_7/material-react-table/locales/de';
++import { MaterialReactTable } from '@lminii/material-react-table';
++import { MRT_Localization_DE } from '@lminii/material-react-table/locales/de';
 ```
 
-> The examples on this site still import from `material-react-table`. Their sandboxes alias that name to `@mini_7/material-react-table` in `package.json`, so the code samples work unchanged in either package name.
+> The examples on this site still import from `material-react-table`. Their sandboxes alias that name to `@lminii/material-react-table` in `package.json`, so the code samples work unchanged in either package name.
 
 ### 3. Peer Dependency Floors
 
@@ -103,7 +103,7 @@ If you passed a custom `slots.textField` to a filter picker it must be compatibl
 ### 6. Package Entry Points
 
 The package now declares an `exports` map with separate ESM (`.mjs`) and CommonJS (`.js`) builds.
-Supported specifiers are `@mini_7/material-react-table`, `@mini_7/material-react-table/locales/<code>` and `@mini_7/material-react-table/package.json`.
+Supported specifiers are `@lminii/material-react-table`, `@lminii/material-react-table/locales/<code>` and `@lminii/material-react-table/package.json`.
 Deep imports into `dist/` or `src/` are no longer resolvable.
 
 This also fixes server-side rendering with date filters when the application imports `@mui/x-date-pickers` as ESM.
@@ -136,7 +136,7 @@ Most of your code keeps working unchanged. The table below lists everything that
 - Pinned cells are positioned with `insetInlineStart` and `insetInlineEnd`, so right-to-left layouts pin to the logical start and end of the row.
 
 Both this package and the TanStack V9 packages ship [agent skills](/docs/getting-started/ai-agents) for AI coding assistants. Run `npx @tanstack/intent@latest list` in your project to see them.
-The `migrate-v3-to-v4` skill covers everything on this page, and the [`@mini_7/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp) server answers exact option lookups from your editor.
+The `migrate-v3-to-v4` skill covers everything on this page, and the [`@lminii/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp) server answers exact option lookups from your editor.
 
 <br />
 

@@ -90,7 +90,7 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       material-react-table:
-        specifier: workspace:@mini_7/material-react-table@*
+        specifier: workspace:@lminii/material-react-table@*
         version: link:../../packages/material-react-table
       next:
         specifier: 14.2.35

@@ -19,32 +19,32 @@ export const StatBadges = () => {
     >
       <a
         aria-label="NPM Version"
-        href="https://npmjs.com/package/@mini_7/material-react-table"
+        href="https://npmjs.com/package/@lminii/material-react-table"
         target="_blank_"
       >
         <img
           alt="NPM Version"
-          src="https://badgen.net/npm/v/@mini_7/material-react-table?color=blue"
+          src="https://badgen.net/npm/v/@lminii/material-react-table?color=blue"
         />
       </a>
       <a
         aria-label="Number of Downloads"
-        href="https://npmtrends.com/@mini_7/material-react-table"
+        href="https://npmtrends.com/@lminii/material-react-table"
         target="_blank_"
       >
         <img
           alt="Downloads"
-          src="https://badgen.net/npm/dt/@mini_7/material-react-table?label=installs&icon=npm&color=blue"
+          src="https://badgen.net/npm/dt/@lminii/material-react-table?label=installs&icon=npm&color=blue"
         />
       </a>
       <a
         aria-label="Bundle Size"
-        href="https://bundlephobia.com/result?p=@mini_7/material-react-table"
+        href="https://bundlephobia.com/result?p=@lminii/material-react-table"
         target="_blank_"
       >
         <img
           alt="Bundle Size"
-          src="https://badgen.net/bundlephobia/minzip/@mini_7/material-react-table@latest?color=blue"
+          src="https://badgen.net/bundlephobia/minzip/@lminii/material-react-table@latest?color=blue"
         />
       </a>
       <a

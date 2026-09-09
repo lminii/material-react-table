@@ -1,10 +1,10 @@
 ---
 name: getting-started
 description: >
-  Build a Material React Table V4 with useMaterialReactTable and the MaterialReactTable table prop: install @mini_7/material-react-table with Material UI V9 peers, define stable data and MRT_ColumnDef columns, toggle features with enable* options, and read the instance. Load for a first MRT table, a Material UI data grid on TanStack Table V9, or when a TanStack useTable or upstream material-react-table example is producing the wrong setup.
+  Build a Material React Table V4 with useMaterialReactTable and the MaterialReactTable table prop: install @lminii/material-react-table with Material UI V9 peers, define stable data and MRT_ColumnDef columns, toggle features with enable* options, and read the instance. Load for a first MRT table, a Material UI data grid on TanStack Table V9, or when a TanStack useTable or upstream material-react-table example is producing the wrong setup.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -22,7 +22,7 @@ This skill builds on `@tanstack/table-core#core` for the headless model and stab
 ## Setup
 
 ```bash
-npm install @mini_7/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9 @emotion/react @emotion/styled
+npm install @lminii/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9 @emotion/react @emotion/styled
 ```
 
 Do not install `@tanstack/react-table`; MRT pins its own exact version. Node 22.12 or newer is required for the CommonJS build because TanStack Table V9 is ESM-only.
@@ -33,7 +33,7 @@ import {
   MaterialReactTable,
   useMaterialReactTable,
   type MRT_ColumnDef,
-} from '@mini_7/material-react-table'
+} from '@lminii/material-react-table'
 
 type Person = { name: string; age: number }
 
@@ -85,7 +85,7 @@ const columns: MRT_ColumnDef<Person>[] = [
 ### Infer column types with createMRTColumnHelper
 
 ```tsx
-import { createMRTColumnHelper } from '@mini_7/material-react-table'
+import { createMRTColumnHelper } from '@lminii/material-react-table'
 
 const helper = createMRTColumnHelper<Person>()
 const columns = [
@@ -176,14 +176,14 @@ Wrong:
 
 ```tsx
 import { MaterialReactTable } from 'material-react-table'
-import { MRT_Localization_DE } from '@mini_7/material-react-table/locales/de'
+import { MRT_Localization_DE } from '@lminii/material-react-table/locales/de'
 ```
 
 Correct:
 
 ```tsx
-import { MaterialReactTable } from '@mini_7/material-react-table'
-import { MRT_Localization_DE } from '@mini_7/material-react-table/locales/de'
+import { MaterialReactTable } from '@lminii/material-react-table'
+import { MRT_Localization_DE } from '@lminii/material-react-table/locales/de'
 ```
 
 Two copies of MRT produce two `MRT_TableInstance` types and duplicate Emotion styles. Pick the fork everywhere, or alias `material-react-table` to it in `package.json`.
@@ -210,4 +210,4 @@ Source: `docs/getting-started/usage.mdx`
 
 ## API Discovery
 
-Read `node_modules/@mini_7/material-react-table/dist/index.d.ts` for `MRT_TableOptions`, `MRT_ColumnDef`, `MRT_TableInstance`, and `MRT_TableState`; the `mui*Props`, `render*`, `enable*`, and `on*Change` option families are all declared there with JSDoc. The docs prop tables at `/docs/api/table-options`, `/docs/api/column-options`, and `/docs/api/state-options` list every option with its default and source library.
+Read `node_modules/@lminii/material-react-table/dist/index.d.ts` for `MRT_TableOptions`, `MRT_ColumnDef`, `MRT_TableInstance`, and `MRT_TableState`; the `mui*Props`, `render*`, `enable*`, and `on*Change` option families are all declared there with JSDoc. The docs prop tables at `/docs/api/table-options`, `/docs/api/column-options`, and `/docs/api/state-options` list every option with its default and source library.

@@ -4,7 +4,7 @@ description: >
   Add create, update, and inline editing to Material React Table V4 with enableEditing, editDisplayMode (modal, row, cell, table, custom), createDisplayMode, onEditingRowSave and onCreatingRowSave with exitEditingMode, table.setEditingRow, table.setCreatingRow, muiEditTextFieldProps validation, editVariant select, and the Edit column slot. Load for CRUD tables, editable cells, row forms in a dialog, or when saved values never reach the callback.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -130,7 +130,7 @@ In `'cell'` mode a double-click opens the field for that cell; in `'table'` mode
 ### Customize the dialog and the create row
 
 ```tsx
-import { MRT_EditActionButtons, createRow } from '@mini_7/material-react-table'
+import { MRT_EditActionButtons, createRow } from '@lminii/material-react-table'
 
 const table = useMaterialReactTable({
   columns,
@@ -240,4 +240,4 @@ Source: `docs/examples/editing-crud-modal`
 
 ## API Discovery
 
-Search `node_modules/@mini_7/material-react-table/dist/index.d.ts` for `editDisplayMode`, `onEditingRowSave`, `onCreatingRowSave`, `_valuesCache`, and `editInputRefs` to see the exact signatures. The Editing guide at `/docs/guides/editing` lists the related table, column, and state options, and `/docs/examples/editing-crud`, `editing-crud-row`, `editing-crud-cell`, `editing-crud-table`, and `editing-crud-tree` are complete TanStack Query CRUD examples.
+Search `node_modules/@lminii/material-react-table/dist/index.d.ts` for `editDisplayMode`, `onEditingRowSave`, `onCreatingRowSave`, `_valuesCache`, and `editInputRefs` to see the exact signatures. The Editing guide at `/docs/guides/editing` lists the related table, column, and state options, and `/docs/examples/editing-crud`, `editing-crud-row`, `editing-crud-cell`, `editing-crud-table`, and `editing-crud-tree` are complete TanStack Query CRUD examples.

@@ -381,5 +381,5 @@ const counts = Object.entries(api.categories)
   .map(([key, rows]) => `${key}=${rows.length}`)
   .join(' ');
 console.log(
-  `Wrote data/ for @mini_7/material-react-table ${api.libraryVersion}: ${counts} guides=${guides.length} reference=${reference.length} skills=${skills.length} examples=${exampleIds.length}`,
+  `Wrote data/ for @lminii/material-react-table ${api.libraryVersion}: ${counts} guides=${guides.length} reference=${reference.length} skills=${skills.length} examples=${exampleIds.length}`,
 );

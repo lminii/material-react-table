@@ -4,7 +4,7 @@ description: >
   Style and extend Material React Table V4 through mui*Props objects and callbacks, the sx prop, Material UI V9 slotProps on text fields, render* slots for toolbars, row actions, detail panels and empty states, displayColumnDefOptions, icons, and localization. Load for theming, conditional row or cell styling, custom toolbar buttons, or replacing built-in display columns.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -106,7 +106,7 @@ Display column ids are `mrt-row-actions`, `mrt-row-drag`, `mrt-row-expand`, `mrt
 ### Icons and localization
 
 ```tsx
-import { MRT_Localization_DE } from '@mini_7/material-react-table/locales/de'
+import { MRT_Localization_DE } from '@lminii/material-react-table/locales/de'
 
 const table = useMaterialReactTable({
   columns,
@@ -187,4 +187,4 @@ Source: `docs/guides/toolbar-customization.mdx`
 
 ## API Discovery
 
-Search `node_modules/@mini_7/material-react-table/dist/index.d.ts` for `mui` to see every prop option and its callback arguments, and for `render` to see every render slot. The Customize Components guide at `/docs/guides/customize-components` lists the options per component, and `/docs/api/column-options` marks which options also exist on columns.
+Search `node_modules/@lminii/material-react-table/dist/index.d.ts` for `mui` to see every prop option and its callback arguments, and for `render` to see every render slot. The Customize Components guide at `/docs/guides/customize-components` lists the options per component, and `/docs/api/column-options` marks which options also exist on columns.

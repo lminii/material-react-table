@@ -17,7 +17,7 @@ import {
 Material React Table V4 ships two things for AI coding assistants such as Claude Code, Cursor, Codex, and Copilot.
 
 1. **Agent skills**: ten `SKILL.md` guides that teach an agent the V4 API and the patterns this documentation recommends.
-2. **An MCP server**: `@mini_7/material-react-table-mcp`, which answers exact questions from the same data as this site.
+2. **An MCP server**: `@lminii/material-react-table-mcp`, which answers exact questions from the same data as this site.
 
 Skills are the right tool for "how should I build this" and load a few thousand tokens of guidance up front.
 The MCP server is the right tool for "what is the type of this option" or "show me the source of that example" and returns only what is asked for.
@@ -25,18 +25,18 @@ Use both together when you can.
 
 ### Skills
 
-The skills live in the library package under `@mini_7/material-react-table/skills` and follow the [Agent Skills](https://agentskills.io) `SKILL.md` format.
+The skills live in the library package under `@lminii/material-react-table/skills` and follow the [Agent Skills](https://agentskills.io) `SKILL.md` format.
 
 <SkillsTable />
 
 #### Install With TanStack Intent
 
-[TanStack Intent](https://www.npmjs.com/package/@tanstack/intent) discovers skills from the packages installed in a project, so the skills are available as soon as `@mini_7/material-react-table` is.
+[TanStack Intent](https://www.npmjs.com/package/@tanstack/intent) discovers skills from the packages installed in a project, so the skills are available as soon as `@lminii/material-react-table` is.
 The TanStack Table V9 packages ship their own skills the same way, and the MRT skills reference them where a feature is inherited from TanStack Table.
 
 ```bash
 npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @mini_7/material-react-table#getting-started
+npx @tanstack/intent@latest load @lminii/material-react-table#getting-started
 ```
 
 Run `npx @tanstack/intent@latest install` once to add the discovery instructions to your `AGENTS.md` or `CLAUDE.md` so the agent runs those commands on its own.
@@ -52,13 +52,13 @@ npx skills add https://github.com/lminii/material-react-table/tree/v4/packages/m
 
 ### MCP Server
 
-The [`@mini_7/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp) package is a stdio [MCP](https://modelcontextprotocol.io) server.
+The [`@lminii/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp) package is a stdio [MCP](https://modelcontextprotocol.io) server.
 It runs locally, needs no network access after installation, and requires Node 22.12 or newer.
 
 Claude Code:
 
 ```bash
-claude mcp add material-react-table -- npx -y @mini_7/material-react-table-mcp
+claude mcp add material-react-table -- npx -y @lminii/material-react-table-mcp
 ```
 
 Any client that launches stdio servers, such as Cursor, Windsurf, or Claude Desktop, takes the same command in its MCP configuration:
@@ -68,7 +68,7 @@ Any client that launches stdio servers, such as Cursor, Windsurf, or Claude Desk
   "mcpServers": {
     "material-react-table": {
       "command": "npx",
-      "args": ["-y", "@mini_7/material-react-table-mcp"]
+      "args": ["-y", "@lminii/material-react-table-mcp"]
     }
   }
 }

@@ -60,7 +60,7 @@ server.registerTool(
   'search_mrt_api',
   {
     title: 'Search the Material React Table API',
-    description: `Search Material React Table V${api.libraryVersion.split('.')[0]} (@mini_7/material-react-table) table options, column options, state slices, and table/column/row/cell instance methods by name or description. Use this first when unsure which option or method exists.`,
+    description: `Search Material React Table V${api.libraryVersion.split('.')[0]} (@lminii/material-react-table) table options, column options, state slices, and table/column/row/cell instance methods by name or description. Use this first when unsure which option or method exists.`,
     inputSchema: {
       query: z
         .string()
@@ -171,7 +171,7 @@ server.registerTool(
   {
     title: 'Get the Material React Table V3 to V4 migration guide',
     description:
-      'Return the full migration guide: switching from material-react-table to @mini_7/material-react-table, Material UI V9 changes (slotProps, date pickers), and every TanStack Table V9 rename and behaviour change.',
+      'Return the full migration guide: switching from material-react-table to @lminii/material-react-table, Material UI V9 changes (slotProps, date pickers), and every TanStack Table V9 rename and behaviour change.',
     inputSchema: {},
   },
   async () => text(loadMigrationGuide()),

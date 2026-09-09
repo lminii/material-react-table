@@ -1,7 +1,7 @@
 {
   "version": "4.0.0",
   "license": "MIT",
-  "name": "@mini_7/material-react-table",
+  "name": "@lminii/material-react-table",
   "description": "A fully featured Material UI V9 implementation of TanStack React Table V9, written from the ground up in TypeScript.",
   "author": "Tyler Lee",
   "contributors": [

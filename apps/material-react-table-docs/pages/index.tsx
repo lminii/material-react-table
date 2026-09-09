@@ -30,7 +30,7 @@ const HomePage = () => {
           <AlertTitle>Material React Table V4 is out!</AlertTitle>
           <Typography>
             Material UI V9 and TanStack Table V9, published as{' '}
-            <code>@mini_7/material-react-table</code>.
+            <code>@lminii/material-react-table</code>.
           </Typography>
           <MuiLink href="/docs/getting-started/migrating-to-v4">
             View the V4 Migration Guide here.

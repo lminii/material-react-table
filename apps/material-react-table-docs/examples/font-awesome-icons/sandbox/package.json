@@ -19,7 +19,7 @@
     "@mui/material": "^9.4.0",
     "@mui/x-date-pickers": "^9.13.0",
     "dayjs": "^1.11.13",
-    "material-react-table": "npm:@mini_7/material-react-table@^4.0.0",
+    "material-react-table": "npm:@lminii/material-react-table@^4.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

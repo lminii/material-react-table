@@ -1,10 +1,10 @@
 ---
 name: migrate-v3-to-v4
 description: >
-  Migrate an application from material-react-table V3 to @mini_7/material-react-table V4: switch the package and imports, upgrade Material UI and X Date Pickers to V9, move text field props to slotProps, and apply every TanStack Table V9 rename and behaviour change (column pinning start/end, columnResizing, sortFn, getPaginatedRowModel, rowSelection true values, removed getCoreRowModel options and onStateChange). Load for migration plans, implementation, or audits of a V3 codebase.
+  Migrate an application from material-react-table V3 to @lminii/material-react-table V4: switch the package and imports, upgrade Material UI and X Date Pickers to V9, move text field props to slotProps, and apply every TanStack Table V9 rename and behaviour change (column pinning start/end, columnResizing, sortFn, getPaginatedRowModel, rowSelection true values, removed getCoreRowModel options and onStateChange). Load for migration plans, implementation, or audits of a V3 codebase.
 metadata:
   type: lifecycle
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -24,7 +24,7 @@ This skill builds on `getting-started`. V4 keeps the V3 API: `useMaterialReactTa
 npx @mui/codemod@latest v9.0.0/system-props src
 npx @mui/codemod@latest deprecations/all src
 npm uninstall material-react-table
-npm install @mini_7/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9
+npm install @lminii/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9
 ```
 
 Then rewrite imports:
@@ -32,8 +32,8 @@ Then rewrite imports:
 ```diff
 -import { MaterialReactTable } from 'material-react-table';
 -import { MRT_Localization_DE } from 'material-react-table/locales/de';
-+import { MaterialReactTable } from '@mini_7/material-react-table';
-+import { MRT_Localization_DE } from '@mini_7/material-react-table/locales/de';
++import { MaterialReactTable } from '@lminii/material-react-table';
++import { MRT_Localization_DE } from '@lminii/material-react-table/locales/de';
 ```
 
 Peer floors are `@mui/material`, `@mui/icons-material`, and `@mui/x-date-pickers` at 9.0 or newer; React 18 and Emotion 11.13 are unchanged. Node 22.12 or newer is required for the CommonJS build.
@@ -82,7 +82,7 @@ Each of these is a find and replace across the codebase:
 
 ### Package entry points
 
-The package ships an `exports` map with `.mjs` and `.js` builds. Only `@mini_7/material-react-table`, `@mini_7/material-react-table/locales/<code>`, and `@mini_7/material-react-table/package.json` resolve; deep imports into `dist/` or `src/` fail at build time and must be replaced with root exports.
+The package ships an `exports` map with `.mjs` and `.js` builds. Only `@lminii/material-react-table`, `@lminii/material-react-table/locales/<code>`, and `@lminii/material-react-table/package.json` resolve; deep imports into `dist/` or `src/` fail at build time and must be replaced with root exports.
 
 ## Common Mistakes
 
@@ -145,17 +145,17 @@ Source: `MIGRATION.md`
 Wrong:
 
 ```tsx
-import { MRT_Localization_FR } from '@mini_7/material-react-table/dist/locales/fr'
+import { MRT_Localization_FR } from '@lminii/material-react-table/dist/locales/fr'
 ```
 
 Correct:
 
 ```tsx
-import { MRT_Localization_FR } from '@mini_7/material-react-table/locales/fr'
+import { MRT_Localization_FR } from '@lminii/material-react-table/locales/fr'
 ```
 
 Source: `packages/material-react-table/package.json` exports map
 
 ## API Discovery
 
-Compare `node_modules/@mini_7/material-react-table/dist/index.d.ts` against the V3 declarations for renamed members; the deprecated `MRT_SortingFn` and `MRT_ColumnSizingInfoState` aliases carry JSDoc pointing to the new names. The full guide with tables is at `/docs/getting-started/migrating-to-v4`.
+Compare `node_modules/@lminii/material-react-table/dist/index.d.ts` against the V3 declarations for renamed members; the deprecated `MRT_SortingFn` and `MRT_ColumnSizingInfoState` aliases carry JSDoc pointing to the new names. The full guide with tables is at `/docs/getting-started/migrating-to-v4`.

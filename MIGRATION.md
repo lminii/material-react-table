@@ -2,7 +2,7 @@
 
 ## Migrating to V4 from V3 (Material UI V9 and TanStack Table V9)
 
-Material React Table V4 is the first release published as `@mini_7/material-react-table`.
+Material React Table V4 is the first release published as `@lminii/material-react-table`.
 It targets Material UI V9 and Material UI X Date Pickers V9.
 It also moves from TanStack Table V8 to TanStack Table V9 (see section 8).
 
@@ -26,7 +26,7 @@ npx @mui/codemod@latest deprecations/all <path>
 
 ```bash
 npm uninstall material-react-table
-npm install @mini_7/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9
+npm install @lminii/material-react-table @mui/material@^9 @mui/icons-material@^9 @mui/x-date-pickers@^9
 ```
 
 Update every import:
@@ -34,8 +34,8 @@ Update every import:
 ```diff
 -import { MaterialReactTable } from 'material-react-table';
 -import { MRT_Localization_DE } from 'material-react-table/locales/de';
-+import { MaterialReactTable } from '@mini_7/material-react-table';
-+import { MRT_Localization_DE } from '@mini_7/material-react-table/locales/de';
++import { MaterialReactTable } from '@lminii/material-react-table';
++import { MRT_Localization_DE } from '@lminii/material-react-table/locales/de';
 ```
 
 ### 3. Peer dependency floors
@@ -86,7 +86,7 @@ If you passed a custom `slots.textField` to a filter picker it must be compatibl
 ### 6. Package entry points
 
 The package now declares an `exports` map with separate ESM (`.mjs`) and CommonJS (`.js`) builds.
-Supported specifiers are `@mini_7/material-react-table`, `@mini_7/material-react-table/locales/<code>` and `@mini_7/material-react-table/package.json`.
+Supported specifiers are `@lminii/material-react-table`, `@lminii/material-react-table/locales/<code>` and `@lminii/material-react-table/package.json`.
 Deep imports into `dist/` or `src/` are no longer resolvable.
 
 This also fixes server-side rendering with date filters when the application imports `@mui/x-date-pickers` as ESM.
@@ -133,4 +133,4 @@ Behaviour changes to check:
 - Pinned cells are positioned with `insetInlineStart` and `insetInlineEnd`, so right-to-left layouts pin to the logical start and end of the row.
 
 Both this package and the TanStack V9 packages ship agent skills for AI coding assistants; run `npx @tanstack/intent@latest list` in your project to see them.
-The `migrate-v3-to-v4` skill covers everything on this page, and the `@mini_7/material-react-table-mcp` server answers exact option lookups.
+The `migrate-v3-to-v4` skill covers everything on this page, and the `@lminii/material-react-table-mcp` server answers exact option lookups.

@@ -1,5 +1,5 @@
 {
-  "name": "@mini_7/material-react-table-mcp",
+  "name": "@lminii/material-react-table-mcp",
   "version": "4.0.1",
   "description": "MCP server that lets AI coding agents look up Material React Table V4 table options, column options, state, instance APIs, the V3 to V4 migration guide, and the bundled agent skills.",
   "license": "MIT",

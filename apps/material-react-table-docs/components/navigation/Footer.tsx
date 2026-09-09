@@ -121,7 +121,7 @@ export const Footer = () => {
           }}
         >
           <MuiLink
-            href="https://www.npmjs.com/package/@mini_7/material-react-table"
+            href="https://www.npmjs.com/package/@lminii/material-react-table"
             target="_blank"
             rel="noopener"
             sx={{

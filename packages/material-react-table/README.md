@@ -1,17 +1,17 @@
 # Material React Table V4
 
-A maintained fork of [KevinVandy/material-react-table](https://github.com/KevinVandy/material-react-table), published as `@mini_7/material-react-table`, that tracks the latest Material UI and TanStack Table releases.
+A maintained fork of [KevinVandy/material-react-table](https://github.com/KevinVandy/material-react-table), published as `@lminii/material-react-table`, that tracks the latest Material UI and TanStack Table releases.
 
 View [Documentation](https://www.material-react-table.com/)
 
-<a href="https://npmjs.com/package/@mini_7/material-react-table" target="_blank">
-  <img alt="" src="https://badgen.net/npm/v/@mini_7/material-react-table?color=blue" />
+<a href="https://npmjs.com/package/@lminii/material-react-table" target="_blank">
+  <img alt="" src="https://badgen.net/npm/v/@lminii/material-react-table?color=blue" />
 </a>
-<a href="https://npmtrends.com/@mini_7/material-react-table" target="_blank">
-  <img alt="" src="https://badgen.net/npm/dt/@mini_7/material-react-table?label=installs&icon=npm&color=blue" />
+<a href="https://npmtrends.com/@lminii/material-react-table" target="_blank">
+  <img alt="" src="https://badgen.net/npm/dt/@lminii/material-react-table?label=installs&icon=npm&color=blue" />
 </a>
-<a href="https://bundlephobia.com/result?p=@mini_7/material-react-table" target="_blank">
-  <img alt="" src="https://badgen.net/bundlephobia/minzip/@mini_7/material-react-table@latest?color=blue" />
+<a href="https://bundlephobia.com/result?p=@lminii/material-react-table" target="_blank">
+  <img alt="" src="https://badgen.net/bundlephobia/minzip/@lminii/material-react-table@latest?color=blue" />
 </a>
 <a href="https://star-history.com/#lminii/material-react-table&Date" target="_blank">
   <img alt="" src="https://badgen.net/github/stars/lminii/material-react-table?color=blue" />
@@ -67,7 +67,7 @@ _All features can easily be enabled/disabled_
 
 _**Fully Fleshed out [Docs](https://www.material-react-table.com/docs/guides#guides) are available for all features**_
 
-- [x] 30-56kb gzipped - [Bundlephobia](https://bundlephobia.com/package/@mini_7/material-react-table)
+- [x] 30-56kb gzipped - [Bundlephobia](https://bundlephobia.com/package/@lminii/material-react-table)
 - [x] Advanced TypeScript Generics Support (TypeScript Optional)
 - [x] Aggregation and Grouping (Sum, Average, Count, etc.)
 - [x] Cell Actions (Right-click Context Menu)
@@ -117,10 +117,10 @@ View the full [Installation Docs](https://www.material-react-table.com/docs/gett
 npm install @mui/material @mui/x-date-pickers @mui/icons-material @emotion/react @emotion/styled
 ```
 
-3. Install @mini_7/material-react-table
+3. Install @lminii/material-react-table
 
 ```bash
-npm install @mini_7/material-react-table
+npm install @lminii/material-react-table
 ```
 
 > _`@tanstack/react-table`, `@tanstack/react-virtual`, and `@tanstack/match-sorter-utils`_ are internal dependencies, so you do NOT need to install them yourself.
@@ -134,7 +134,7 @@ import { useMemo, useState, useEffect } from 'react';
 import {
   MaterialReactTable,
   useMaterialReactTable,
-} from '@mini_7/material-react-table';
+} from '@lminii/material-react-table';
 
 //data must be stable reference (useState, useMemo, useQuery, defined outside of component, etc.)
 const data = [
@@ -200,11 +200,11 @@ _Open in [Code Sandbox](https://codesandbox.io/s/simple-material-react-table-exa
 ## AI Agents
 
 The package ships [TanStack Intent](https://www.npmjs.com/package/@tanstack/intent) skills that teach coding agents the MRT API, the `table` prop pattern, customization, state management, editing, filtering, virtualization, localization, drag and drop ordering, and the V3 to V4 migration.
-In a project with `@mini_7/material-react-table` installed:
+In a project with `@lminii/material-react-table` installed:
 
 ```bash
 npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @mini_7/material-react-table#getting-started
+npx @tanstack/intent@latest load @lminii/material-react-table#getting-started
 ```
 
 The skills follow the Agent Skills `SKILL.md` format, so any harness can install them from the repository with the [skills CLI](https://github.com/vercel-labs/skills) (pass `-a codex`, `-a cursor`, `--all`, or another agent):
@@ -213,10 +213,10 @@ The skills follow the Agent Skills `SKILL.md` format, so any harness can install
 npx skills add https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table/skills -a claude-code
 ```
 
-For exact option lookups, the feature guides, and the source of every docs example, add the MCP server [`@mini_7/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp):
+For exact option lookups, the feature guides, and the source of every docs example, add the MCP server [`@lminii/material-react-table-mcp`](https://github.com/lminii/material-react-table/tree/v4/packages/material-react-table-mcp):
 
 ```bash
-claude mcp add material-react-table -- npx -y @mini_7/material-react-table-mcp
+claude mcp add material-react-table -- npx -y @lminii/material-react-table-mcp
 ```
 
 The [AI Agents](https://material-react-table.minii.dev/docs/getting-started/ai-agents) docs page covers every tool and install path.

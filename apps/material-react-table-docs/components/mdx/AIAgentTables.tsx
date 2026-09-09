@@ -65,7 +65,7 @@ const skillData: SkillRow[] = [
   {
     skill: 'migrate-v3-to-v4',
     loadFor:
-      'Moving an app from material-react-table V3 to @mini_7/material-react-table V4.',
+      'Moving an app from material-react-table V3 to @lminii/material-react-table V4.',
   },
 ];
 

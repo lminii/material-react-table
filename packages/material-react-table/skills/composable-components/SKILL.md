@@ -4,7 +4,7 @@ description: >
   Compose a custom Material React Table V4 layout from exported MRT_* components that all take the same table prop: MRT_TablePaper, MRT_TableContainer, MRT_Table, MRT_TopToolbar, MRT_TablePagination, MRT_GlobalFilterTextField, MRT_ToolbarInternalButtons, MRT_ShowHideColumnsButton, and MRT_TableBodyCellValue for fully custom markup. Load for tables inside cards or dialogs, toolbars placed outside the table, split layouts, or headless rendering with MRT state.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -28,7 +28,7 @@ import {
   MRT_TablePagination,
   MRT_ToggleFiltersButton,
   useMaterialReactTable,
-} from '@mini_7/material-react-table'
+} from '@lminii/material-react-table'
 
 const table = useMaterialReactTable({ columns, data, enableBottomToolbar: false })
 
@@ -78,7 +78,7 @@ import {
   MRT_ShowHideColumnsButton,
   MRT_ToggleDensePaddingButton,
   MRT_ToggleFullScreenButton,
-} from '@mini_7/material-react-table'
+} from '@lminii/material-react-table'
 
 <MRT_ShowHideColumnsButton table={table} />
 <MRT_ToggleDensePaddingButton table={table} />
@@ -90,7 +90,7 @@ Each button reads and writes MRT state on the shared instance, so it works from 
 ### Fully custom markup with MRT_TableBodyCellValue
 
 ```tsx
-import { MRT_TableBodyCellValue, flexRender } from '@mini_7/material-react-table'
+import { MRT_TableBodyCellValue, flexRender } from '@lminii/material-react-table'
 
 <Table>
   <TableHead>
@@ -186,4 +186,4 @@ Source: `apps/material-react-table-docs/examples/custom-headless/sandbox/src/TS.
 
 ## API Discovery
 
-`node_modules/@mini_7/material-react-table/dist/index.d.ts` exports every `MRT_*` component with its props interface; all of them include `table: MRT_TableInstance<TData>`. The component tree with links to source is at `/docs/api/mrt-components`.
+`node_modules/@lminii/material-react-table/dist/index.d.ts` exports every `MRT_*` component with its props interface; all of them include `table: MRT_TableInstance<TData>`. The component tree with links to source is at `/docs/api/mrt-components`.

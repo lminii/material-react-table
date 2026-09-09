@@ -4,7 +4,7 @@ description: >
   Configure column and global filtering in Material React Table V4: filterVariant (text, select, multi-select, autocomplete, range, range-slider, checkbox, date, datetime, time and their ranges), enableFacetedValues, filterFn and filterFns, enableColumnFilterModes with columnFilterModeOptions, columnFilterDisplayMode, globalFilterFn and ranked results, filter match highlighting, and the muiFilter*Props. Load for dropdown or date filters, custom filter logic, filter mode menus, or search that matches the wrong rows.
 metadata:
   type: framework
-  library: '@mini_7/material-react-table'
+  library: '@lminii/material-react-table'
   library_version: '4.0.0'
   framework: react
 requires:
@@ -210,4 +210,4 @@ Source: `docs/guides/column-filtering.mdx`
 
 ## API Discovery
 
-Search `node_modules/@mini_7/material-react-table/dist/index.d.ts` for `filterVariant`, `MRT_FilterOption`, `filterFns`, and `muiFilter` for the exact unions and callback props. `MRT_FilterFns` is exported for reuse. The Column Filtering and Global Filtering guides at `/docs/guides/column-filtering` and `/docs/guides/global-filtering` list the related table, column, and state options, and `/docs/examples/customize-filter-variants`, `customize-filter-modes`, `enable-filter-facet-values`, and `alternate-column-filtering` are runnable examples.
+Search `node_modules/@lminii/material-react-table/dist/index.d.ts` for `filterVariant`, `MRT_FilterOption`, `filterFns`, and `muiFilter` for the exact unions and callback props. `MRT_FilterFns` is exported for reuse. The Column Filtering and Global Filtering guides at `/docs/guides/column-filtering` and `/docs/guides/global-filtering` list the related table, column, and state options, and `/docs/examples/customize-filter-variants`, `customize-filter-modes`, `enable-filter-facet-values`, and `alternate-column-filtering` are runnable examples.

@@ -72,9 +72,9 @@ const data = [
     freeOrLicensed: 'Free MIT',
     bundleSize: 53,
     bundlePhobiaImg:
-      'https://badgen.net/bundlephobia/minzip/@mini_7/material-react-table@latest?color=blue',
+      'https://badgen.net/bundlephobia/minzip/@lminii/material-react-table@latest?color=blue',
     bundlePhobiaLink:
-      'https://bundlephobia.com/package/@mini_7/material-react-table@latest',
+      'https://bundlephobia.com/package/@lminii/material-react-table@latest',
     description:
       'Built on top of TanStack Table V9 and Material UI V9, Material React Table (MRT) is a batteries-included React table library that attempts to provide all the table features you need while trying to stay as highly performant and lightweight as possible. Customization is treated as a top priority to let you override any styles you need to change. Initially built in 2022, so it is still somewhat new.',
   },

@@ -1,6 +1,6 @@
-# @mini_7/material-react-table-mcp
+# @lminii/material-react-table-mcp
 
-An [MCP](https://modelcontextprotocol.io) server that gives AI coding agents an exact reference for [Material React Table V4](https://github.com/lminii/material-react-table) (`@mini_7/material-react-table`).
+An [MCP](https://modelcontextprotocol.io) server that gives AI coding agents an exact reference for [Material React Table V4](https://github.com/lminii/material-react-table) (`@lminii/material-react-table`).
 It serves the same data as the docs site: the API pages, every feature guide, the components and hooks reference, the source of every runnable example, the V3 to V4 migration guide, and the agent skills bundled with the library.
 
 ## Tools
@@ -11,7 +11,7 @@ It serves the same data as the docs site: the API pages, every feature guide, th
 | `get_mrt_api` | Exact lookup of one entry: type, default, source library, description, docs link. |
 | `list_mrt_api` | List one category, optionally filtered by a name prefix such as `mui`, `render`, `enable`, or `on`. |
 | `get_mrt_migration_guide` | The full `MIGRATION.md` for moving from `material-react-table` V3 to V4. |
-| `get_mrt_skill` | The `SKILL.md` guides shipped in `@mini_7/material-react-table/skills`. |
+| `get_mrt_skill` | The `SKILL.md` guides shipped in `@lminii/material-react-table/skills`. |
 | `search_mrt_docs` | Find which guide, reference page, skill, or example covers a topic, and which tool returns it. |
 | `get_mrt_guide` | One of the 38 feature guides as Markdown, with its relevant options expanded and its live examples named. Call without a name to list them. |
 | `get_mrt_reference` | The MRT components or MRT hooks reference page. |
@@ -22,7 +22,7 @@ It serves the same data as the docs site: the API pages, every feature guide, th
 Claude Code:
 
 ```bash
-claude mcp add material-react-table -- npx -y @mini_7/material-react-table-mcp
+claude mcp add material-react-table -- npx -y @lminii/material-react-table-mcp
 ```
 
 Any client that launches stdio servers:
@@ -32,7 +32,7 @@ Any client that launches stdio servers:
   "mcpServers": {
     "material-react-table": {
       "command": "npx",
-      "args": ["-y", "@mini_7/material-react-table-mcp"]
+      "args": ["-y", "@lminii/material-react-table-mcp"]
     }
   }
 }
@@ -43,11 +43,11 @@ Node 22.12 or newer is required.
 ## Skills without the server
 
 The library package ships the same skills for [TanStack Intent](https://www.npmjs.com/package/@tanstack/intent).
-In a project that has `@mini_7/material-react-table` installed:
+In a project that has `@lminii/material-react-table` installed:
 
 ```bash
 npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @mini_7/material-react-table#getting-started
+npx @tanstack/intent@latest load @lminii/material-react-table#getting-started
 ```
 
 Any other harness can install them with the [skills CLI](https://github.com/vercel-labs/skills):
