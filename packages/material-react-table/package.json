@@ -1,8 +1,8 @@
 {
-  "version": "4.0.0",
+  "version": "4.0.1",
   "license": "MIT",
   "name": "@lminii/material-react-table",
-  "description": "A fully featured Material UI V9 implementation of TanStack React Table V9, written from the ground up in TypeScript.",
+  "description": "Fork of material-react-table upgraded to Material UI V9 and TanStack React Table V9",
   "author": "Tyler Lee",
   "contributors": [
     "Kevin Vandy (https://github.com/KevinVandy)"
