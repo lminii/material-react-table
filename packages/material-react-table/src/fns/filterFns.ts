@@ -177,8 +177,24 @@ const notEmpty = <TData extends MRT_RowData>(
 
 notEmpty.autoRemove = (val: any) => !val;
 
+// TanStack v9's arrIncludesSome only matches array cell values, but the
+// multi-select filter variant uses it on scalar cell values too.
+const arrIncludesSome = <TData extends MRT_RowData>(
+  row: Row<any, TData>,
+  id: string,
+  filterValues: unknown[],
+): boolean => {
+  const value = row.getValue<unknown>(id);
+  return Array.isArray(value)
+    ? filterValues.some((filterValue) => value.includes(filterValue))
+    : filterValues.includes(value);
+};
+
+arrIncludesSome.autoRemove = (val: any) => !val?.length;
+
 export const MRT_FilterFns = {
   ...filterFns,
+  arrIncludesSome,
   between,
   betweenInclusive,
   contains,
